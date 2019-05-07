@@ -1,0 +1,43 @@
+
+
+.bstyle { border-style: groove; 
+    border-color: navy; 
+    background-color: navy; 
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+
+}
+
+.mfont{
+    margin-bottom: -5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.buttons{position: relative;
+background-color: steelblue;
+ border:none;
+font-size:28px;
+color:white;
+padding:20px;
+width:200px;
+text-align:center;
+transition-duration: 0.4s;
+overflow: hidden;
+cursor: pointer; }
+
+.buttons:after{background: steelblue;
+display: block;
+position: absolute;
+padding-top: 300%;
+padding-left: 350%;
+margin-left: -20px;
+margin-top: 120%;
+opacity: 0;
+transition: 0.8s;}
+ 
+.buttons:active:after {padding: 0px;
+margin: 0;
+opacity: 1;
+transition: 0s;}
+
